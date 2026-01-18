@@ -1,105 +1,241 @@
 {
-    "courses": [
-      {
-        "id": 1,
-        "title": "Web developer",
-        "slug": "Web developer",
-        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-        "price": 99.99,
-        "instructor": "John Doe",
-        "isFeatured": true,
-        "image": "/courses/guitar.jpg" 
-      },
-      {
-        "id": 2,
-        "title": "Web developer",
-        "slug": "Web developer",
-        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-        "price": 109.99,
-        "instructor": "Jane Smith",
-        "isFeatured": false,
-        "image": "/courses/piano.jpg" 
-      },
-      {
-        "id": 3,
-        "title": "Web developer",
-        "slug": "Web developer",
-        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-        "price": 119.99,
-        "instructor": "Emily Johnson",
-        "isFeatured": true,
-        "image": "/courses/vocalist.jpg" 
-      },
-      {
-        "id": 4,
-       "title": "Web developer",
-        "slug": "Web developer",
-        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-        "price": 129.99,
-        "instructor": "Mike Brown",
-        "isFeatured": false,
-        "image": "/courses/drumming.jpg"
-      },
-      {
-        "id": 5,
-      "title": "Web developer",
-        "slug": "Web developer",
-        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-        "price": 139.99,
-        "instructor": "Chris Davis",
-        "isFeatured": false,
-        "image": "/courses/jazz.jpg"
-      },
-      {
-        "id": 6,
-      "title": "Web developer",
-        "slug": "Web developer",
-        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-        "price": 149.99,
-        "instructor": "Alex Wilson",
-        "isFeatured": true,
-        "image": "/courses/music-prod.jpg"
-      },
-      {
-        "id": 7,
-       "title": "Web developer",
-        "slug": "Web developer",
-        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-        "price": 159.99,
-        "instructor": "Samantha Miller",
-        "isFeatured": false,
-        "image": "/courses/song-writing.jpg"
-      },
-      {
-        "id": 8,
-        "title": "Web developer",
-        "slug": "Web developer",
-        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-        "price": 169.99,
-        "instructor": "Luke Harris",
-        "isFeatured": true,
-        "image": "/courses/music-prod.jpg"
-      },
-      {
-        "id": 9,
-        "title": "Python",
-        "slug": "Python",
-        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-        "price": 179.99,
-        "instructor": "Grace Lee",
-        "isFeatured": false,
-        "image": "/courses/classical-music.jpg"
-      },
-      {
-        "id": 10,
-        "title": "data science",
-        "slug": "data science",
-        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-        "price": 189.99,
-        "instructor": "Ethan Moore",
-        "isFeatured": true,
-        "image": "/courses/blues.jpg"
-      }
-    ]
-  }
-  
+  "courses": [
+    {
+      "id": 1,
+      "title": "Music Theory for Beginners",
+      "slug": "music-theory-beginners",
+      "description": "Start your journey with the fundamentals of rhythm, melody, and harmony.",
+      "longDescription": "This comprehensive course is designed to build a solid foundation in music theory. You will learn to read sheet music, understand scales and modes, and grasp the core concepts of harmony and rhythm. Whether you play piano, guitar, or just want to understand the language of music, this course is your starting point.",
+      "price": 7999,
+      "instructor": "Aravind Kumar",
+      "instructorBio": "Aravind Kumar is a classically trained pianist with over 15 years of teaching experience. He holds a Master's degree in Music Theory from the Royal College of Music.",
+      "level": "Beginner",
+      "duration": "4 weeks",
+      "rating": 4.8,
+      "isFeatured": true,
+      "image": "https://images.unsplash.com/photo-1507838153414-b4b713384ebd?q=80&w=2670&auto=format&fit=crop",
+      "category": "Basic",
+      "curriculum": [
+        "Introduction to Rhythm & Notation",
+        "Major & Minor Scales",
+        "Intervals & Triads",
+        "Basic Chord Progressions"
+      ],
+      "reviews": [
+        {
+          "user": "Rahul S.",
+          "rating": 5,
+          "comment": "Finally understood scales! Great teacher."
+        },
+        {
+          "user": "Priya M.",
+          "rating": 4.5,
+          "comment": "Very clear and concise."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Advanced Composition Techniques",
+      "slug": "advanced-composition-techniques",
+      "description": "Master complex orchestration and emotive storytelling through sound.",
+      "longDescription": "Take your compositions to the next level with advanced techniques in orchestration, counterpoint, and arranging. Learn how to analyze scores and apply sophisticated textures to your own work.",
+      "price": 11999,
+      "instructor": "Shreya Malhotra",
+      "instructorBio": "Shreya Malhotra is a film composer whose work has been featured in award-winning independent films. She specializes in orchestral textures and hybrid scoring.",
+      "level": "Advanced",
+      "duration": "8 weeks",
+      "rating": 4.9,
+      "isFeatured": true,
+      "image": "https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?q=80&w=2670&auto=format&fit=crop",
+      "category": "Advanced Composition",
+      "curriculum": [
+        "Advanced Harmony & Modulation",
+        "Counterpoint Essentials",
+        "Orchestral Textures",
+        "Score Analysis"
+      ],
+      "reviews": [
+        {
+          "user": "Arjun K.",
+          "rating": 5,
+          "comment": "Mind-blowing techniques."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "The Art of Songwriting",
+      "slug": "art-of-songwriting",
+      "description": "Learn to write compelling lyrics and memorable melodies.",
+      "longDescription": "Unlock your creative potential and find your unique voice. This course covers lyric writing structures, prosody, melody development, and overcoming writer's block.",
+      "price": 9999,
+      "instructor": "Isha Nair",
+      "instructorBio": "Isha Nair is a chart-topping songwriter who has penned hits for major pop artists. She focuses on the emotional connection of songs.",
+      "level": "Intermediate",
+      "duration": "6 weeks",
+      "rating": 4.7,
+      "isFeatured": true,
+      "image": "https://images.unsplash.com/photo-1511379938547-c1f69419868d?q=80&w=2670&auto=format&fit=crop",
+      "category": "Songwriting",
+      "curriculum": [
+        "Lyric Structures (AAAA, AABA)",
+        "Melody & Prosody",
+        "Metaphor & Imagery",
+        "Co-writing strategies"
+      ],
+      "reviews": [
+        {
+          "user": "Neha G.",
+          "rating": 5,
+          "comment": "My lyrics have improved so much."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Electronic Music Production",
+      "slug": "electronic-music-production",
+      "description": "Produce professional tracks using the latest DAW techniques.",
+      "longDescription": "Dive deep into the world of electronic music production. Learn sound design, synthesis, sampling, and mixing workflow in Ableton Live and Logic Pro.",
+      "price": 15999,
+      "instructor": "Chirag Mehta",
+      "instructorBio": "Chirag Mehta is a touring DJ and producer known for his deep house and techno tracks. He brings 10 years of industry experience.",
+      "level": "Advanced",
+      "duration": "10 weeks",
+      "rating": 5.0,
+      "isFeatured": true,
+      "image": "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=2670&auto=format&fit=crop",
+      "category": "Music Production",
+      "curriculum": [
+        "DAW Workflow Mastery",
+        "Subtractive & Wavetable Synthesis",
+        "Creative Sampling",
+        "Mixing for the Club"
+      ],
+      "reviews": [
+        {
+          "user": "Vikram R.",
+          "rating": 5,
+          "comment": "The synthesis module alone is worth the price."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Piano Mastery: Basic to Pro",
+      "slug": "piano-mastery",
+      "description": "A complete guide to mastering the keys.",
+      "longDescription": "From reading music to improvisation, this course covers it all. Designed for those who want to master the piano with proper technique and expression.",
+      "price": 8999,
+      "instructor": "Sangeeta Rao",
+      "instructorBio": "Sangeeta Rao is a concert pianist and dedicated educator. She emphasizes proper technique to prevent injury and maximize expression.",
+      "level": "All Levels",
+      "duration": "12 weeks",
+      "rating": 4.6,
+      "isFeatured": false,
+      "image": "https://images.unsplash.com/photo-1552422535-c45813c61732?q=80&w=2670&auto=format&fit=crop",
+      "category": "Basic",
+      "curriculum": [
+        "Hand Position & Posture",
+        "Scales & Arpeggios",
+        "Sight Reading",
+        "Repertoire Study"
+      ],
+      "reviews": [
+        {
+          "user": "Anjali D.",
+          "rating": 4.5,
+          "comment": "Very thorough course."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Mixing & Mastering Essentials",
+      "slug": "mixing-mastering-essentials",
+      "description": "Polish your tracks to industry standards.",
+      "longDescription": "Learn the art of mixing. Balance your tracks, apply EQ, compression, and effects to create a polished, radio-ready sound.",
+      "price": 13999,
+      "instructor": "Chirag Mehta",
+      "instructorBio": "Chirag Mehta is also an expert mixing engineer, having mixed hundreds of tracks for independent artists.",
+      "level": "Intermediate",
+      "duration": "6 weeks",
+      "rating": 4.8,
+      "isFeatured": false,
+      "image": "https://images.unsplash.com/photo-1598653222000-6b7b7a552625?q=80&w=2670&auto=format&fit=crop",
+      "category": "Music Production",
+      "curriculum": [
+        "Balancing & Panning",
+        "EQ & Compression Deep Dive",
+        "Time-based Effects (Reverb/Delay)",
+        "Mastering Chain"
+      ],
+      "reviews": [
+        {
+          "user": "Rohan J.",
+          "rating": 5,
+          "comment": "My mixes sound professional now."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Lyricism & Storytelling",
+      "slug": "lyricism-storytelling",
+      "description": "Craft lyrics that resonate and tell powerful stories.",
+      "longDescription": "Focus purely on the words. Learn how to tell stories that captivate listeners and create emotional resonance through your lyrics.",
+      "price": 8499,
+      "instructor": "Isha Nair",
+      "instructorBio": "Isha Nair believes that every word matters. Her simplified approach to storytelling makes complex emotions accessible.",
+      "level": "Beginner",
+      "duration": "4 weeks",
+      "rating": 4.5,
+      "isFeatured": false,
+      "image": "https://images.unsplash.com/photo-1459749411177-287ce35e8b4f?q=80&w=2670&auto=format&fit=crop",
+      "category": "Songwriting",
+      "curriculum": [
+        "Theme Development",
+        "Rhyme Schemes",
+        "Show, Don't Tell",
+        "Editing Your Lyrics"
+      ],
+      "reviews": [
+        {
+          "user": "Kavita S.",
+          "rating": 4,
+          "comment": "Good tips on overcoming writer's block."
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Orchestration Styles",
+      "slug": "orchestration-styles",
+      "description": "Explore different styles of orchestral arrangement.",
+      "longDescription": "A comparative study of orchestration styles from the Baroque era to modern film scoring. Understand how to arrange for different ensembles.",
+      "price": 12999,
+      "instructor": "Shreya Malhotra",
+      "instructorBio": "Shreya Malhotra brings her academic background to this deep dive into historical and modern orchestration.",
+      "level": "Advanced",
+      "duration": "8 weeks",
+      "rating": 4.9,
+      "isFeatured": false,
+      "image": "https://images.unsplash.com/photo-1507838153414-b4b713384ebd?q=80&w=2670&auto=format&fit=crop",
+      "category": "Advanced Composition",
+      "curriculum": [
+        "String Quartet Writing",
+        "Brass & Woodwind Sections",
+        "Percussion Dynamics",
+        "Hybrid Orchestration"
+      ],
+      "reviews": [
+        {
+          "user": "Amit B.",
+          "rating": 5,
+          "comment": "Incredible depth of knowledge."
+        }
+      ]
+    }
+  ]
+}
